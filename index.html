@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menghitung Keliling Lingkaran</title>
+  </head>
+  <body>
+    <p>Bangun Datar: Keliling Lingkaran</p>
+    <p>Rumus: Keliling = π(3,14) x D</p>
+    <p>Nim: 231011701275</p>
+    <p>Nama: Syifa Angraeni Qudratillah</p>
+
+    <h1>Menghitung Keliling Lingkaran</h1>
+
+    <label for="jari-jari">Diameter:</label>
+    <input type="number" id="Diameter" />
+
+    <button onclick="hitungKeliling()">Hitung Keliling</button>
+
+    <p>Hasil: <span id="hasil"></span></p>
+    <button onclick="reset()">Clear</button>
+
+    <script>
+      function hitungKeliling() {
+        var d = document.getElementById("Diameter").value;
+        var keliling = 3.14 * d;
+
+        document.getElementById("hasil").innerHTML = keliling;
+      }
+      function reset() {
+        var d = document.getElementById("Diameter").value;
+        var keliling = 3.14 * d;
+        Diameter.value = null;
+
+        document.getElementById("hasil").innerHTML = keliling;
+      }
+    </script>
+  </body>
+</html>
